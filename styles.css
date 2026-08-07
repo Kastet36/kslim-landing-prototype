@@ -1803,7 +1803,7 @@ textarea.field__control {
   margin-bottom: var(--space-5);
 }
 
-.modal[data-future-page-notice] .modal__dialog::before {
+.modal--future-page .modal__dialog::before {
   display: block;
   margin-bottom: var(--space-5);
   padding: 14px 52px 14px 16px;
