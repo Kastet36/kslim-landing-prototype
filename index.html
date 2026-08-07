@@ -10,40 +10,71 @@
   <body>
     <a class="skip-link" href="#main">Перейти к содержанию</a>
 
-    <header class="site-header">
-      <div class="site-header__utility">
-        <div class="container site-header__utility-inner">
-          <div class="cluster">
-            <span>Санкт-Петербург</span>
-            <span>Пн–Пт: 08:00–17:00</span>
-          </div>
-          <div class="cluster">
-            <a href="mailto:electra-its@mail.ru">electra-its@mail.ru</a>
-            <a href="tel:+79643935464">+7 (964) 393-54-64</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container site-header__main">
-        <a class="site-header__logo" href="#top" aria-label="КСЛИМ — на главную">
+    <header class="site-header site-header--multipage">
+      <div class="container multipage-header">
+        <a class="site-header__logo" href="https://electra-its.ru/" aria-label="КСЛИМ — на главную">
           <img src="assets/images/logo.png" width="89" height="62" alt="Контактная сварка ЛИМ">
         </a>
 
-        <nav class="site-nav" aria-label="Основная навигация">
-          <ul class="site-nav__list">
-            <li><a class="site-nav__link" href="#catalog">Каталог</a></li>
-            <li><a class="site-nav__link" href="#advantages">Преимущества</a></li>
-            <li><a class="site-nav__link" href="#tasks">Задачи</a></li>
-            <li><a class="site-nav__link" href="#services">Услуги</a></li>
-            <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="multipage-header__company">
+          <div class="header-line">
+            <span class="header-symbol" aria-hidden="true">●</span>
+            <a href="https://electra-its.ru/contacts">Санкт-Петербург</a>
+            <span class="header-separator"></span>
+            <span>Пн–Пт: 08:00–17:00</span>
+          </div>
+          <a class="header-line" href="mailto:electra-its@mail.ru">
+            <span class="header-symbol" aria-hidden="true">✉</span>
+            electra-its@mail.ru
+          </a>
+        </div>
 
-        <div class="site-header__actions">
-          <button class="button button--primary" type="button" data-modal-open="equipment-form">
-            Оставить заявку
-          </button>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <div class="multipage-header__phones">
+          <span class="header-symbol header-symbol--phone" aria-hidden="true">☎</span>
+          <div>
+            <a href="tel:+79643935464"><strong>+7 (964) 393-54-64</strong> <small>Основной</small></a>
+            <a href="tel:+78124302831"><strong>+7 (812) 430-38-90</strong> <small>Санкт-Петербург</small></a>
+            <a href="tel:+79681802767"><strong>+7 (968) 180-27-67</strong> <small>Коммерческий директор</small></a>
+          </div>
+        </div>
+
+        <div class="multipage-header__tools" aria-label="Пользовательские разделы">
+          <a href="https://electra-its.ru/comparison"><span class="tool-counter">0</span><span class="tool-icon" aria-hidden="true">⇄</span>Сравнение</a>
+          <a href="https://electra-its.ru/favorites"><span class="tool-counter">0</span><span class="tool-icon" aria-hidden="true">◆</span>Избранное</a>
+        </div>
+
+        <div class="multipage-header__actions">
+          <button class="button button--primary" type="button" data-modal-open="equipment-form">Оформить заявку</button>
+          <button class="header-callback" type="button" data-modal-open="consultation-form">Заказать звонок</button>
+        </div>
+      </div>
+
+      <div class="multipage-nav">
+        <div class="container multipage-nav__inner">
+          <nav class="site-nav" aria-label="Основная навигация сайта">
+            <ul class="site-nav__list">
+              <li class="site-nav__item site-nav__item--submenu">
+                <a class="site-nav__link" href="https://electra-its.ru/catalog/">Каталог</a>
+                <ul class="site-nav__submenu">
+                  <li><a href="https://electra-its.ru/catalog/contact-spot-welding/">Контактная точечная сварка</a></li>
+                  <li><a href="https://electra-its.ru/catalog/relief-welding">Рельефная сварка</a></li>
+                  <li><a href="https://electra-its.ru/catalog/seam-welding/">Шовная сварка</a></li>
+                  <li><a href="https://electra-its.ru/catalog/butt-welding/">Стыковая сварка</a></li>
+                  <li><a href="https://electra-its.ru/catalog/suspended-machines-of-contact-welding/">Подвесные машины</a></li>
+                  <li><a href="https://electra-its.ru/catalog/mnogoelektrodnyie-mashinyi">Многоэлектродные машины</a></li>
+                  <li><a href="https://electra-its.ru/catalog/parts/">Комплектующие</a></li>
+                </ul>
+              </li>
+              <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/lizing-i-kredit">Лизинг и кредит</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/dealers">Дилерам</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/services">Модернизация и ремонт</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/about">О компании</a></li>
+              <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/contacts">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <a class="header-search" href="https://electra-its.ru/search" aria-label="Поиск по сайту"><span aria-hidden="true"></span></a>
+          <button class="menu-toggle menu-toggle--dark" type="button" aria-expanded="false" aria-controls="mobile-menu">
             <span class="menu-toggle__lines" aria-hidden="true"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -52,14 +83,13 @@
 
       <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden>
         <div class="container">
-          <a href="#catalog">Каталог</a>
-          <a href="#advantages">Преимущества</a>
-          <a href="#tasks">Задачи</a>
-          <a href="#services">Услуги</a>
-          <a href="#contacts">Контакты</a>
-          <button class="button button--primary" type="button" data-modal-open="equipment-form">
-            Оставить заявку
-          </button>
+          <a href="https://electra-its.ru/catalog/">Каталог</a>
+          <a href="https://electra-its.ru/lizing-i-kredit">Лизинг и кредит</a>
+          <a href="https://electra-its.ru/dealers">Дилерам</a>
+          <a href="https://electra-its.ru/services">Модернизация и ремонт</a>
+          <a href="https://electra-its.ru/about">О компании</a>
+          <a href="https://electra-its.ru/contacts">Контакты</a>
+          <button class="button button--primary" type="button" data-modal-open="equipment-form">Оформить заявку</button>
         </div>
       </nav>
     </header>
