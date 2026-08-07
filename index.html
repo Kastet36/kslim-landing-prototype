@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Прототип главной страницы производителя машин контактной сварки КСЛИМ.">
+    <title>КСЛИМ — машины контактной сварки от производителя</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <header class="site-header">
+      <div class="site-header__utility">
+        <div class="container site-header__utility-inner">
+          <div class="cluster">
+            <span>Санкт-Петербург</span>
+            <span>Пн–Пт: 08:00–17:00</span>
+          </div>
+          <div class="cluster">
+            <a href="mailto:electra-its@mail.ru">electra-its@mail.ru</a>
+            <a href="tel:+79643935464">+7 (964) 393-54-64</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container site-header__main">
+        <a class="site-header__logo" href="#top" aria-label="КСЛИМ — на главную">
+          <img src="assets/images/logo.png" width="89" height="62" alt="Контактная сварка ЛИМ">
+        </a>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#catalog">Каталог</a></li>
+            <li><a class="site-nav__link" href="#advantages">Преимущества</a></li>
+            <li><a class="site-nav__link" href="#tasks">Задачи</a></li>
+            <li><a class="site-nav__link" href="#services">Услуги</a></li>
+            <li><a class="site-nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__actions">
+          <button class="button button--primary" type="button" data-modal-open="equipment-form">
+            Оставить заявку
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="menu-toggle__lines" aria-hidden="true"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden>
+        <div class="container">
+          <a href="#catalog">Каталог</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#tasks">Задачи</a>
+          <a href="#services">Услуги</a>
+          <a href="#contacts">Контакты</a>
+          <button class="button button--primary" type="button" data-modal-open="equipment-form">
+            Оставить заявку
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero__inner">
+          <div class="hero__content flow" style="--flow-space: 24px">
+            <span class="eyebrow eyebrow--light">Собственное производство с 2002 года</span>
+            <h1>Машины контактной сварки от производителя</h1>
+            <p class="lead">
+              Собственное производство машин контактной сварки с 2002 года. Более 100 моделей
+              в каталоге. Разработка и доработка под ТЗ заказчика. Работаем с предприятиями
+              по всей России и СНГ. Оставьте заявку, подберём машину под вашу задачу!
+            </p>
+
+            <div class="hero__actions">
+              <button class="button button--primary button--wide" type="button" data-modal-open="equipment-form">
+                Подобрать оборудование
+              </button>
+              <a class="button button--light button--wide" href="#catalog">Перейти в каталог</a>
+            </div>
+
+            <div class="hero__proof" aria-label="Ключевые показатели компании">
+              <div>
+                <strong class="numeric">22+ года</strong>
+                <span>производим сварочное оборудование</span>
+              </div>
+              <div>
+                <strong class="numeric">100+</strong>
+                <span>серийных моделей в каталоге</span>
+              </div>
+              <div>
+                <strong class="numeric">7000+</strong>
+                <span>машин уже произведено</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <span class="hero__media-label">Промышленное оборудование КСЛИМ</span>
+            <img src="assets/images/hero-machine.png" width="454" height="578" alt="Многоэлектродная машина контактной сварки КСЛИМ">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="catalog">
+        <div class="container">
+          <header class="section-heading section-heading--row">
+            <div class="flow">
+              <span class="eyebrow">Продукция</span>
+              <h2>Каталог машин контактной сварки</h2>
+            </div>
+            <p class="lead">
+              Серийное оборудование и решения под техническое задание для производственных
+              предприятий России и СНГ.
+            </p>
+          </header>
+
+          <div class="grid grid--3 catalog-grid">
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/spot-welding.jpg" width="609" height="1280" alt="Машина контактно-точечной сварки">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">01</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Контактно-точечная сварка</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/seam-welding.jpg" width="1179" height="1160" alt="Машина шовной сварки">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">02</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Шовная сварка</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/butt-welding.png" width="997" height="759" alt="Машина стыковой сварки">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">03</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Стыковая сварка</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/multi-electrode.png" width="240" height="300" alt="Многоэлектродная сварочная машина">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">04</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Многоэлектродные машины</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card catalog-card--graphic">
+              <div class="catalog-card__media parts-illustration" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">05</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Комплектующие машин сварки</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/suspended-machine.png" width="227" height="313" alt="Подвесная машина контактной сварки">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">06</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Подвесные машины</a></h3>
+              </div>
+            </article>
+
+            <article class="catalog-card">
+              <div class="catalog-card__media">
+                <img src="assets/images/relief-welding.jpg" width="591" height="1280" alt="Машина рельефной сварки">
+              </div>
+              <div class="catalog-card__body">
+                <span class="card-index">07</span>
+                <h3 class="heading-sm"><a class="catalog-card__link" href="#">Рельефная сварка</a></h3>
+              </div>
+            </article>
+
+            <aside class="catalog-consultation">
+              <span class="eyebrow eyebrow--light">Нужна помощь?</span>
+              <h3>Не знаете, какая машина подойдёт?</h3>
+              <p>Опишите производственную задачу. Инженер предложит подходящие модели и варианты доработки.</p>
+              <button class="button button--primary" type="button" data-modal-open="equipment-form">
+                Получить подбор
+              </button>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--navy" id="numbers">
+        <div class="container">
+          <header class="section-heading">
+            <span class="eyebrow eyebrow--light">О компании</span>
+            <h2>КСЛИМ в цифрах</h2>
+          </header>
+
+          <div class="stats-grid">
+            <article class="stat-card">
+              <p class="stat-card__value numeric">2002</p>
+              <h3 class="heading-sm">Работаем с 2002 года</h3>
+              <p class="stat-card__label">Собственное производство в Санкт-Петербурге. Полный цикл от разработки до выпуска готовой машины.</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-card__value numeric">100+</p>
+              <h3 class="heading-sm">Моделей в каталоге</h3>
+              <p class="stat-card__label">Серийные машины контактной сварки. Разработка нестандартных решений под ТЗ заказчика.</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-card__value numeric">30+ лет</p>
+              <h3 class="heading-sm">Опыт инженеров</h3>
+              <p class="stat-card__label">Проектируем, модернизируем и реализуем сложные технические решения в области контактной сварки.</p>
+            </article>
+            <article class="stat-card">
+              <p class="stat-card__value numeric">7000+</p>
+              <h3 class="heading-sm">Машин произведено</h3>
+              <p class="stat-card__label">Ежегодно выпускаем более 250 станков для предприятий России и СНГ.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="advantages">
+        <div class="container">
+          <header class="section-heading">
+            <span class="eyebrow">Почему КСЛИМ</span>
+            <h2>Почему клиенты выбирают КСЛИМ</h2>
+            <p class="lead">Берём на себя весь цикл: от разбора производственной задачи до обслуживания работающего оборудования.</p>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <span class="card__icon numeric">01</span>
+              <h3 class="card__title heading-sm">Собственное производство</h3>
+              <p class="card__text">Производим машины контактной сварки на собственных мощностях в Санкт-Петербурге. Большинство узлов и комплектующих изготавливаем сами. Полный цикл без посредников и наценок.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon numeric">02</span>
+              <h3 class="card__title heading-sm">Инженеры с опытом 30+ лет</h3>
+              <p class="card__text">Наши конструкторы решают сложные технические задачи в области контактной сварки. Проектируем, модернизируем и реализуем решения любой сложности.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon numeric">03</span>
+              <h3 class="card__title heading-sm">Доработка под задачу</h3>
+              <p class="card__text">Разрабатываем нестандартные машины под ТЗ заказчика. Проектируем решение под ваше производство с нуля.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon numeric">04</span>
+              <h3 class="card__title heading-sm">Сервис и гарантия</h3>
+              <p class="card__text">Оборудование рассчитано на трёхсменный график работы и служит от 7 лет по ГОСТу. Гарантия от 12 месяцев, сервисное сопровождение и поставка запчастей после покупки.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon numeric">05</span>
+              <h3 class="card__title heading-sm">Сертификаты</h3>
+              <p class="card__text">Оборудование соответствует ГОСТу, компания сертифицирована по ISO. Работаем с предприятиями с жёсткими требованиями к поставщикам.</p>
+            </article>
+            <article class="card">
+              <span class="card__icon numeric">06</span>
+              <h3 class="card__title heading-sm">Дилеры по всей России и СНГ</h3>
+              <p class="card__text">Представители в Москве, Краснодаре, Екатеринбурге, Самаре, Ростове и других регионах. Поставка и обслуживание рядом с вашим предприятием.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section--compact">
+        <div class="container">
+          <div class="cta-panel">
+            <div class="flow">
+              <span class="eyebrow eyebrow--light">Инженерный подбор</span>
+              <h2 class="heading-md">Поможем подобрать сварочную машину под ваши производственные задачи.</h2>
+              <p>Уточним параметры деталей, материал, толщину и требуемую производительность.</p>
+            </div>
+            <div class="cta-panel__action">
+              <button class="button button--primary button--wide" type="button" data-modal-open="equipment-form">
+                Подобрать оборудование
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="tasks">
+        <div class="container">
+          <header class="section-heading section-heading--row">
+            <div class="flow">
+              <span class="eyebrow">Применение</span>
+              <h2>Подберём машину под вашу задачу</h2>
+            </div>
+            <p class="lead">Выберите близкую задачу. В прототипе откроется пример будущей отдельной страницы с описанием решения и подходящего оборудования.</p>
+          </header>
+
+          <div class="grid grid--3 tasks-grid">
+            <article class="card task-card">
+              <span class="task-card__number numeric">01</span>
+              <h3 class="card__title heading-sm">Сварка арматуры и каркасов ЖБИ</h3>
+              <p class="card__text">Машины для изготовления арматурных каркасов колонн, плит, балок и фундаментов. Контактная сварка обеспечивает повышенную несущую способность каркаса по сравнению с ручной сваркой.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-rebar">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card">
+              <span class="task-card__number numeric">02</span>
+              <h3 class="card__title heading-sm">Сварка сеток</h3>
+              <p class="card__text">Оборудование для производства арматурных, дорожных и кладочных сеток из проволоки различного диаметра. Машины обеспечивают высокую скорость сварки узлов и снижают количество брака.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-mesh">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card">
+              <span class="task-card__number numeric">03</span>
+              <h3 class="card__title heading-sm">Сварка проволоки и прутков</h3>
+              <p class="card__text">Машины для стыковой сварки прутков и проволоки в заготовки нужной длины. Стабильный цикл сварки обеспечивает ровный шов с минимальным выбросом искр.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-wire">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card">
+              <span class="task-card__number numeric">04</span>
+              <h3 class="card__title heading-sm">Сварка воздуховодов</h3>
+              <p class="card__text">Оборудование для точечной сварки элементов прямоугольных и круглых воздуховодов. Соединения получаются плотными и герметичными без последующей шлифовки.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-ducts">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card">
+              <span class="task-card__number numeric">05</span>
+              <h3 class="card__title heading-sm">Сварка моек и тонкостенных ёмкостей</h3>
+              <p class="card__text">Машины для точечной и шовной сварки чаш моек, баков и ёмкостей из стали толщиной от 0,5 мм. Регулировка тока и усилия сохраняет геометрию кромок.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-tanks">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card">
+              <span class="task-card__number numeric">06</span>
+              <h3 class="card__title heading-sm">Сварка мембран и лёгких конструкций</h3>
+              <p class="card__text">Оборудование для сварки фасадных элементов, экранов, решёток и лёгких металлоконструкций. Точечная и шовная сварка формирует чистый шов на внешних поверхностях.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-light">Подробнее о решении</button></div>
+            </article>
+            <article class="card task-card task-card--wide">
+              <span class="task-card__number numeric">07</span>
+              <h3 class="card__title heading-sm">Сварка в машиностроении и автопроме</h3>
+              <p class="card__text">Машины для сборки узлов кузовов, рам и элементов транспортных средств. Оборудование подбирается под конкретный тип соединения и материал детали.</p>
+              <div class="card__footer"><button class="text-link" type="button" data-modal-open="task-auto">Подробнее о решении</button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <div class="container">
+          <header class="section-heading section-heading--row">
+            <div class="flow">
+              <span class="eyebrow">Опыт внедрения</span>
+              <h2>Решённые задачи</h2>
+            </div>
+            <div class="prototype-note">
+              <strong>Для согласования:</strong> здесь нужны реальные кейсы. Можно не раскрывать название заказчика, если указать отрасль, задачу и измеримый результат.
+            </div>
+          </header>
+
+          <article class="case-card">
+            <div class="case-card__media">
+              <img src="assets/images/production-stock.jpg" width="1536" height="1024" alt="Оборудование на производстве КСЛИМ">
+            </div>
+            <div class="case-card__body flow">
+              <span class="case-card__label">Пример оформления кейса</span>
+              <h3>Сварка арматурных каркасов для ЖБИ</h3>
+              <dl class="case-facts">
+                <div><dt>Задача</dt><dd>Указать производственную задачу заказчика, исходные ограничения и требуемую производительность.</dd></div>
+                <div><dt>Решение</dt><dd>Показать, какую серийную машину поставили или какое оборудование разработали под ТЗ.</dd></div>
+                <div><dt>Результат</dt><dd>Добавить сроки, объём выпуска, снижение брака или другой подтверждаемый результат.</dd></div>
+              </dl>
+              <button class="text-link" type="button" data-modal-open="case-example">Читать пример кейса</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="services">
+        <div class="container">
+          <header class="section-heading">
+            <span class="eyebrow">Полный цикл</span>
+            <h2>Услуги компании</h2>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card service-card"><span class="service-card__tag">Поставка</span><h3 class="card__title heading-sm">Продажа машин контактной сварки</h3><p class="card__text">Поставляем машины контактной сварки по всей России и СНГ. Более 100 моделей в каталоге.</p></article>
+            <article class="card service-card"><span class="service-card__tag">Проектирование</span><h3 class="card__title heading-sm">Разработка под ТЗ</h3><p class="card__text">Проектируем и производим нестандартные машины под задачи вашего производства.</p></article>
+            <article class="card service-card"><span class="service-card__tag">Инжиниринг</span><h3 class="card__title heading-sm">Модернизация оборудования</h3><p class="card__text">Дорабатываем и переоснащаем действующие машины контактной сварки под новые требования.</p></article>
+            <article class="card service-card"><span class="service-card__tag">Поддержка</span><h3 class="card__title heading-sm">Сервис и гарантийное обслуживание</h3><p class="card__text">Гарантийный и послегарантийный ремонт. Выезд специалиста на предприятие заказчика.</p></article>
+            <article class="card service-card"><span class="service-card__tag">Комплектующие</span><h3 class="card__title heading-sm">Поставка запчастей</h3><p class="card__text">Поставляем оригинальные комплектующие для бесперебойной работы вашего оборудования.</p></article>
+            <article class="card service-card"><span class="service-card__tag">Экспертиза</span><h3 class="card__title heading-sm">Инженерное консультирование</h3><p class="card__text">Помогаем подобрать оборудование и спроектировать сварочную линию под ваше производство.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <div class="container">
+          <header class="section-heading section-heading--row">
+            <div class="flow">
+              <span class="eyebrow">Доверие</span>
+              <h2>Отзывы предприятий</h2>
+            </div>
+            <div class="prototype-note">
+              <strong>Для согласования:</strong> предпочтительно разместить сканы благодарственных писем на фирменных бланках. Ниже показана примерная композиция блока.
+            </div>
+          </header>
+
+          <div class="grid grid--3">
+            <article class="card review-card">
+              <span class="document-preview" aria-hidden="true"><i></i><i></i><i></i><b>Место для письма</b></span>
+              <blockquote>Короткая цитата из благодарственного письма о качестве оборудования, соблюдении сроков и работе специалистов.</blockquote>
+              <p class="review-card__author">Название предприятия · должность и имя представителя</p>
+            </article>
+            <article class="card review-card">
+              <span class="document-preview" aria-hidden="true"><i></i><i></i><i></i><b>Место для письма</b></span>
+              <blockquote>Здесь можно показать отзыв о нестандартной разработке, запуске машины и сопровождении после поставки.</blockquote>
+              <p class="review-card__author">Предприятие отрасли · регион</p>
+            </article>
+            <article class="card review-card">
+              <span class="document-preview" aria-hidden="true"><i></i><i></i><i></i><b>Место для письма</b></span>
+              <blockquote>Третий отзыв подтверждает надёжность оборудования при промышленной эксплуатации и качество сервиса.</blockquote>
+              <p class="review-card__author">Производственная компания · представитель</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--surface" id="certificates">
+        <div class="container certificate-layout">
+          <div class="flow certificate-layout__content" style="--flow-space: 24px">
+            <span class="eyebrow">Контроль качества</span>
+            <h2>Работаем по стандартам ISO</h2>
+            <p class="lead">Производство, контроль качества и работа с клиентами соответствуют международным требованиям ISO 9001. Оборудование соответствует требованиям ГОСТ.</p>
+            <ul class="feature-list">
+              <li>Сертифицированная система менеджмента качества</li>
+              <li>Соответствие оборудования требованиям ГОСТ</li>
+              <li>Документы для проверки службой снабжения</li>
+            </ul>
+            <div class="prototype-note"><strong>Для согласования:</strong> заменить макет справа на скан действующего сертификата. По клику документ будет открываться крупнее.</div>
+          </div>
+
+          <button class="certificate-mockup" type="button" data-modal-open="certificate-preview" aria-label="Открыть пример сертификата">
+            <span class="certificate-mockup__mark">ISO</span>
+            <span class="certificate-mockup__title">Сертификат<br>ISO 9001</span>
+            <span class="certificate-mockup__lines"></span>
+            <span class="certificate-mockup__seal">КСЛИМ</span>
+            <span class="certificate-mockup__hint">Нажмите, чтобы увеличить</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section request-section" id="request">
+        <div class="container request-section__inner">
+          <div class="flow">
+            <span class="eyebrow eyebrow--light">Обсудить проект</span>
+            <h2>Подберём машину под вашу задачу</h2>
+            <p class="lead">Опишите задачу, инженер подберёт подходящее оборудование и рассчитает стоимость.</p>
+          </div>
+          <div class="request-section__actions">
+            <button class="button button--primary button--wide" type="button" data-modal-open="task-form">Подобрать машину под мою задачу</button>
+            <button class="button button--light button--wide" type="button" data-modal-open="consultation-form">Бесплатная консультация</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contacts">
+        <div class="container contacts">
+          <div>
+            <span class="eyebrow">Контакты</span>
+            <h2>Свяжитесь с нами удобным способом</h2>
+            <div class="contacts__list">
+              <div class="contacts__item"><span class="contact-icon">01</span><div><strong>Производство и офис</strong><p>197374, Санкт-Петербург, ул. Савушкина, д. 85</p></div></div>
+              <div class="contacts__item"><span class="contact-icon">02</span><div><strong>Телефон</strong><p><a href="tel:+79643935464">+7 (964) 393-54-64</a></p></div></div>
+              <div class="contacts__item"><span class="contact-icon">03</span><div><strong>Электронная почта</strong><p><a href="mailto:electra-its@mail.ru">electra-its@mail.ru</a></p></div></div>
+              <div class="contacts__item"><span class="contact-icon">04</span><div><strong>Реквизиты</strong><p>ООО «Контактная сварка ЛИМ»<br>ИНН 7814730930 · ОГРН 1187847151359</p></div></div>
+            </div>
+          </div>
+
+          <div class="contacts__map map-placeholder" role="img" aria-label="Карта: Санкт-Петербург, улица Савушкина, дом 85">
+            <span class="map-placeholder__road map-placeholder__road--one"></span>
+            <span class="map-placeholder__road map-placeholder__road--two"></span>
+            <span class="map-placeholder__road map-placeholder__road--three"></span>
+            <span class="map-placeholder__pin"></span>
+            <span class="map-placeholder__label"><strong>КСЛИМ</strong>Санкт-Петербург, ул. Савушкина, 85</span>
+            <span class="map-placeholder__note">В рабочей версии здесь будет интерактивная карта</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/images/logo.png" width="89" height="62" alt="Контактная сварка ЛИМ">
+          <p>Машины контактной сварки от производителя</p>
+        </div>
+        <div><strong>Разделы</strong><a href="#catalog">Каталог</a><a href="#tasks">Задачи</a><a href="#services">Услуги</a></div>
+        <div><strong>Контакты</strong><a href="tel:+79643935464">+7 (964) 393-54-64</a><a href="mailto:electra-its@mail.ru">electra-its@mail.ru</a><span>Санкт-Петербург</span></div>
+      </div>
+      <div class="container footer-bottom"><span>© КСЛИМ</span><span>Прототип страницы для согласования</span></div>
+    </footer>
+
+    <!-- Form 1: equipment selection -->
+    <section class="modal" id="equipment-form" role="dialog" aria-modal="true" aria-labelledby="equipment-form-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <div class="modal__intro flow">
+          <span class="eyebrow">Заявка инженеру</span>
+          <h2 class="heading-md" id="equipment-form-title">Подберём оборудование под вашу задачу</h2>
+          <p>Оставьте контакты в форме ниже. Инженер свяжется с вами и поможет подобрать сварочное оборудование.</p>
+        </div>
+        <form class="form prototype-form">
+          <label class="field"><span class="field__label">Имя <small>необязательно</small></span><input class="field__control" type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+          <label class="field"><span class="field__label">Телефон *</span><input class="field__control" type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+          <label class="field"><span class="field__label">Опишите вашу задачу <small>необязательно</small></span><textarea class="field__control" name="task" placeholder="Что нужно сваривать, материал, размеры и объём производства"></textarea></label>
+          <button class="button button--primary" type="submit">Подобрать оборудование</button>
+          <p class="form__privacy">Нажимая кнопку, пользователь соглашается с политикой обработки персональных данных.</p>
+          <p class="form-result" role="status" hidden>Это прототип: форма показывает структуру, но не отправляет данные.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Form 2: task selection -->
+    <section class="modal" id="task-form" role="dialog" aria-modal="true" aria-labelledby="task-form-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <div class="modal__intro flow">
+          <span class="eyebrow">Индивидуальный подбор</span>
+          <h2 class="heading-md" id="task-form-title">Расскажите о вашей задаче</h2>
+          <p>Оставьте контакты, инженер свяжется с вами, уточнит задачу и подберёт подходящее оборудование.</p>
+        </div>
+        <form class="form prototype-form">
+          <label class="field"><span class="field__label">Имя <small>необязательно</small></span><input class="field__control" type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+          <label class="field"><span class="field__label">Телефон *</span><input class="field__control" type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+          <label class="field"><span class="field__label">Опишите вашу задачу <small>необязательно</small></span><textarea class="field__control" name="task" placeholder="Детали, материал, толщина, необходимая производительность"></textarea></label>
+          <button class="button button--primary" type="submit">Подобрать машину</button>
+          <p class="form__privacy">Нажимая кнопку, пользователь соглашается с политикой обработки персональных данных.</p>
+          <p class="form-result" role="status" hidden>Это прототип: форма показывает структуру, но не отправляет данные.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Form 3: consultation -->
+    <section class="modal" id="consultation-form" role="dialog" aria-modal="true" aria-labelledby="consultation-form-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <div class="modal__intro flow">
+          <span class="eyebrow">Связаться со специалистом</span>
+          <h2 class="heading-md" id="consultation-form-title">Бесплатная консультация</h2>
+          <p>Оставьте контакты, инженер свяжется с вами и ответит на все вопросы по оборудованию.</p>
+        </div>
+        <form class="form prototype-form">
+          <label class="field"><span class="field__label">Имя <small>необязательно</small></span><input class="field__control" type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться"></label>
+          <label class="field"><span class="field__label">Телефон *</span><input class="field__control" type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required></label>
+          <button class="button button--primary" type="submit">Бесплатная консультация</button>
+          <p class="form__privacy">Нажимая кнопку, пользователь соглашается с политикой обработки персональных данных.</p>
+          <p class="form-result" role="status" hidden>Это прототип: форма показывает структуру, но не отправляет данные.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Task detail popups. In production these become separate landing pages. -->
+    <section class="modal modal--detail" id="task-rebar" role="dialog" aria-modal="true" aria-labelledby="task-rebar-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-rebar-title">Сварка арматуры и каркасов ЖБИ</h2><p class="lead">Решения для изготовления каркасов колонн, плит, балок и фундаментов с повторяемым качеством каждого сварного узла.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Типы каркасов и диапазоны арматуры</li><li>Требуемая производительность линии</li><li>Подходящие многоэлектродные и точечные машины</li><li>Примеры внедрений и результат заказчика</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/multi-electrode.png" alt="Пример оборудования для сварки каркасов"><strong>Многоэлектродные машины и решения под ТЗ</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать решение для ЖБИ</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-mesh" role="dialog" aria-modal="true" aria-labelledby="task-mesh-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-mesh-title">Сварка сеток</h2><p class="lead">Оборудование для производства арматурных, дорожных и кладочных сеток из проволоки различного диаметра.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Виды и размеры выпускаемых сеток</li><li>Диаметры продольной и поперечной проволоки</li><li>Шаг ячейки и скорость производства</li><li>Комплектация линии подачи и резки</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/multi-electrode.png" alt="Многоэлектродная машина для сварки сеток"><strong>Многоэлектродные машины для сварки сеток</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать машину для сеток</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-wire" role="dialog" aria-modal="true" aria-labelledby="task-wire-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-wire-title">Сварка проволоки и прутков</h2><p class="lead">Стыковая сварка заготовок нужной длины со стабильным циклом и минимальным выбросом металла.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Диаметры и материалы заготовок</li><li>Требования к качеству стыка</li><li>Режимы сварки и подготовка торцов</li><li>Подбор серийной машины по диапазону</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/butt-welding.png" alt="Стыковая сварочная машина"><strong>Машины контактной стыковой сварки</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать стыковую машину</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-ducts" role="dialog" aria-modal="true" aria-labelledby="task-ducts-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-ducts-title">Сварка воздуховодов</h2><p class="lead">Точечная сварка элементов прямоугольных и круглых воздуховодов для плотных и герметичных соединений.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Форма и габариты воздуховодов</li><li>Толщина оцинкованной и нержавеющей стали</li><li>Требования к герметичности соединения</li><li>Варианты вылета электродов и оснастки</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/spot-welding.jpg" alt="Точечная сварочная машина"><strong>Точечные машины с адаптированной оснасткой</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить сварку воздуховодов</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-tanks" role="dialog" aria-modal="true" aria-labelledby="task-tanks-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-tanks-title">Сварка моек и тонкостенных ёмкостей</h2><p class="lead">Точечная и шовная сварка чаш моек, баков и ёмкостей из стали толщиной от 0,5 мм.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Материал, толщина и геометрия изделия</li><li>Требования к внешнему виду шва</li><li>Регулировка тока и усилия сжатия</li><li>Подходящие точечные и шовные модели</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/seam-welding.jpg" alt="Шовная сварочная машина"><strong>Шовные и точечные машины для тонкого металла</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать машину для ёмкостей</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-light" role="dialog" aria-modal="true" aria-labelledby="task-light-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-light-title">Сварка мембран и лёгких конструкций</h2><p class="lead">Решения для фасадных элементов, экранов, решёток и лёгких металлоконструкций с чистым внешним швом.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Типы изделий и используемые материалы</li><li>Требования к видимой поверхности</li><li>Подбор электродов и сварочного режима</li><li>Примеры оснастки под типовые изделия</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/relief-welding.jpg" alt="Машина рельефной сварки"><strong>Точечные, шовные и рельефные машины</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить конструкцию</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="task-auto" role="dialog" aria-modal="true" aria-labelledby="task-auto-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-auto-title">Сварка в машиностроении и автопроме</h2><p class="lead">Оборудование для сборки узлов кузовов, рам и элементов транспортных средств под конкретное соединение и материал.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Конструкция и материал свариваемого узла</li><li>Производственный такт и уровень автоматизации</li><li>Контроль параметров и повторяемость цикла</li><li>Проектирование машины и оснастки под ТЗ</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/spot-welding.jpg" alt="Промышленная точечная машина"><strong>Серийные и специальные машины под ТЗ</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить производственную задачу</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="case-example" role="dialog" aria-modal="true" aria-labelledby="case-example-title" hidden>
+      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Демонстрационная структура кейса</span><h2 class="heading-md" id="case-example-title">Сварка арматурных каркасов для ЖБИ</h2><p class="prototype-note"><strong>Важно:</strong> текст ниже показывает формат. Перед публикацией его необходимо заменить подтверждёнными данными реального проекта.</p><div class="case-detail"><section><span>01</span><h3 class="heading-sm">Задача</h3><p>Описать исходное производство, тип каркаса, диаметры арматуры, требуемый темп выпуска и ограничения площадки.</p></section><section><span>02</span><h3 class="heading-sm">Решение</h3><p>Показать выбранную или разработанную машину, её комплектацию, оснастку и выполненные доработки.</p></section><section><span>03</span><h3 class="heading-sm">Результат</h3><p>Привести измеримые показатели: срок запуска, объём выпуска, сокращение ручных операций или брака.</p></section></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить похожую задачу</button></div>
+    </section>
+
+    <section class="modal modal--detail" id="certificate-preview" role="dialog" aria-modal="true" aria-labelledby="certificate-preview-title" hidden>
+      <div class="modal__dialog modal__dialog--certificate"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Место для реального документа</span><h2 class="heading-md" id="certificate-preview-title">Сертификат ISO 9001</h2><div class="certificate-sheet"><strong>ISO 9001</strong><span>СЕРТИФИКАТ</span><i></i><i></i><i></i><b>КСЛИМ</b></div><p class="prototype-note">В рабочей версии здесь откроется крупный скан действующего сертификата с возможностью рассмотреть номер, срок действия и область сертификации.</p></div>
+    </section>
+
+    <script src="prototype.js"></script>
+  </body>
+</html>
