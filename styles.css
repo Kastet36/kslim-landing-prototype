@@ -1021,112 +1021,100 @@ h4,
   padding-top: var(--space-6);
 }
 
-.catalog-card {
-  position: relative;
-  min-height: 360px;
-  overflow: hidden;
-  padding: 0;
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-md);
-  background: var(--color-surface);
-  color: var(--color-ink);
+.catalog-heading {
+  align-items: end;
 }
 
-.catalog-card__media {
+.catalog-heading h2 {
+  max-width: 650px;
+}
+
+.catalog-directory {
   display: grid;
-  height: 230px;
-  padding: var(--space-6);
-  background: linear-gradient(145deg, var(--color-white), var(--color-surface-strong));
-  place-items: center;
+  overflow: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--color-navy-800);
+  border-radius: var(--radius-lg);
+  background: rgb(255 255 255 / 14%);
+  box-shadow: var(--shadow-lg);
 }
 
-.catalog-card__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform var(--transition-base);
-}
-
-.catalog-card:hover .catalog-card__media img {
-  transform: scale(1.03);
-}
-
-.catalog-card__body {
-  padding: var(--space-6);
-  border-top: 1px solid var(--color-line);
-  background: var(--color-white);
-}
-
-.catalog-card__link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.catalog-card__link::after {
-  position: absolute;
-  inset: 0;
-  content: "";
-}
-
-.card-index {
-  display: block;
-  margin-bottom: var(--space-2);
-  color: var(--color-subtle);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.catalog-consultation {
-  display: flex;
-  min-height: 360px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: clamp(28px, 4vw, 44px);
-  border-radius: var(--radius-md);
-  background: var(--color-navy-900);
-  color: rgb(255 255 255 / 72%);
-}
-
-.catalog-consultation h3 {
-  margin: var(--space-5) 0 var(--space-4);
-  color: var(--color-white);
-}
-
-.catalog-consultation .button {
-  margin-top: var(--space-8);
-}
-
-.parts-illustration {
-  position: relative;
-  display: flex;
-  gap: 18px;
+.catalog-directory__item {
+  display: grid;
+  min-height: 104px;
+  grid-template-columns: 48px minmax(0, 1fr) 38px;
+  gap: var(--space-4);
   align-items: center;
-  justify-content: center;
+  padding: var(--space-5) var(--space-6);
+  border: 0;
+  background: var(--color-navy-900);
+  color: var(--color-white);
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
-.parts-illustration span {
-  position: relative;
-  width: 58px;
-  height: 120px;
-  border: 10px solid var(--color-navy-700);
-  border-radius: 28px 28px 10px 10px;
-  background: var(--color-accent-500);
-  box-shadow: inset 0 0 0 7px var(--color-white);
-}
-
-.parts-illustration span:nth-child(2) {
-  height: 156px;
-}
-
-.parts-illustration span::after {
-  position: absolute;
-  right: 8px;
-  bottom: -32px;
-  left: 8px;
-  height: 32px;
+.catalog-directory__item:hover {
   background: var(--color-navy-800);
-  content: "";
+}
+
+.catalog-directory__number {
+  color: rgb(255 255 255 / 48%);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.catalog-directory__title {
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.25;
+}
+
+.catalog-directory__arrow {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgb(255 255 255 / 28%);
+  border-radius: 50%;
+  color: var(--color-accent-500);
+  font-size: 20px;
+  place-items: center;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.catalog-directory__item:hover .catalog-directory__arrow {
+  transform: translateX(3px);
+  background: rgb(255 255 255 / 8%);
+}
+
+.catalog-directory__copy {
+  display: grid;
+  gap: 5px;
+}
+
+.catalog-directory__copy small {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.catalog-directory__item--cta,
+.catalog-directory__item--cta:hover {
+  background: var(--color-accent-500);
+  color: var(--color-navy-950);
+}
+
+.catalog-directory__item--cta .catalog-directory__number {
+  color: rgb(7 35 60 / 62%);
+}
+
+.catalog-directory__item--cta .catalog-directory__arrow {
+  border-color: var(--color-navy-900);
+  background: var(--color-navy-900);
+  color: var(--color-white);
 }
 
 .stats-grid {
@@ -2206,12 +2194,12 @@ textarea.field__control {
     min-height: 370px;
   }
 
-  .catalog-card {
-    min-height: 0;
+  .catalog-directory {
+    grid-template-columns: 1fr;
   }
 
-  .catalog-card__media {
-    height: 210px;
+  .catalog-directory__item {
+    min-height: 88px;
   }
 
   .stat-card {
