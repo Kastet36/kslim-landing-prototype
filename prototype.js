@@ -62,6 +62,36 @@
     });
   });
 
+  document.querySelectorAll('.detail-equipment').forEach((section) => {
+    const label = section.querySelector(':scope > span');
+    const image = section.querySelector(':scope > img');
+    const title = section.querySelector(':scope > strong');
+    if (!label || !image || !title) return;
+
+    label.textContent = 'Подходящие машины';
+    label.className = 'detail-equipment__heading';
+
+    const grid = document.createElement('div');
+    grid.className = 'detail-equipment__grid';
+
+    for (let index = 1; index <= 6; index += 1) {
+      const card = document.createElement('article');
+      card.className = 'detail-equipment__card';
+
+      const cardImage = image.cloneNode(true);
+      const cardBody = document.createElement('div');
+      const cardLabel = document.createElement('small');
+      const cardTitle = title.cloneNode(true);
+
+      cardLabel.textContent = `Пример карточки ${String(index).padStart(2, '0')}`;
+      cardBody.append(cardLabel, cardTitle);
+      card.append(cardImage, cardBody);
+      grid.append(card);
+    }
+
+    section.replaceChildren(label, grid);
+  });
+
   menuToggle?.addEventListener('click', () => {
     const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', String(!expanded));
