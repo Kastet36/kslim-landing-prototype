@@ -65,6 +65,18 @@
                   <li><a href="https://electra-its.ru/catalog/parts/">Комплектующие</a></li>
                 </ul>
               </li>
+              <li class="site-nav__item site-nav__item--submenu">
+                <button class="site-nav__link site-nav__trigger" type="button" aria-haspopup="true">Производственные задачи</button>
+                <ul class="site-nav__submenu site-nav__submenu--tasks">
+                  <li><button type="button" data-modal-open="task-rebar">Сварка арматуры и каркасов ЖБИ</button></li>
+                  <li><button type="button" data-modal-open="task-mesh">Сварка сеток</button></li>
+                  <li><button type="button" data-modal-open="task-wire">Сварка проволоки и прутков</button></li>
+                  <li><button type="button" data-modal-open="task-ducts">Сварка воздуховодов</button></li>
+                  <li><button type="button" data-modal-open="task-tanks">Сварка моек и тонкостенных ёмкостей</button></li>
+                  <li><button type="button" data-modal-open="task-light">Сварка мембран и лёгких конструкций</button></li>
+                  <li><button type="button" data-modal-open="task-auto">Сварка в машиностроении и автопроме</button></li>
+                </ul>
+              </li>
               <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/lizing-i-kredit">Лизинг и кредит</a></li>
               <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/dealers">Дилерам</a></li>
               <li class="site-nav__item"><a class="site-nav__link" href="https://electra-its.ru/services">Модернизация и ремонт</a></li>
@@ -84,6 +96,16 @@
       <nav class="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" hidden>
         <div class="container">
           <a href="https://electra-its.ru/catalog/">Каталог</a>
+          <div class="mobile-nav__group">
+            <span>Производственные задачи</span>
+            <button type="button" data-modal-open="task-rebar">Сварка арматуры и каркасов ЖБИ</button>
+            <button type="button" data-modal-open="task-mesh">Сварка сеток</button>
+            <button type="button" data-modal-open="task-wire">Сварка проволоки и прутков</button>
+            <button type="button" data-modal-open="task-ducts">Сварка воздуховодов</button>
+            <button type="button" data-modal-open="task-tanks">Сварка моек и тонкостенных ёмкостей</button>
+            <button type="button" data-modal-open="task-light">Сварка мембран и лёгких конструкций</button>
+            <button type="button" data-modal-open="task-auto">Сварка в машиностроении и автопроме</button>
+          </div>
           <a href="https://electra-its.ru/lizing-i-kredit">Лизинг и кредит</a>
           <a href="https://electra-its.ru/dealers">Дилерам</a>
           <a href="https://electra-its.ru/services">Модернизация и ремонт</a>
@@ -591,31 +613,31 @@
     </section>
 
     <!-- Task detail popups. In production these become separate landing pages. -->
-    <section class="modal modal--detail" id="task-rebar" role="dialog" aria-modal="true" aria-labelledby="task-rebar-title" hidden>
+    <section class="modal modal--detail" id="task-rebar" role="dialog" aria-modal="true" aria-labelledby="task-rebar-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-rebar-title">Сварка арматуры и каркасов ЖБИ</h2><p class="lead">Решения для изготовления каркасов колонн, плит, балок и фундаментов с повторяемым качеством каждого сварного узла.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Типы каркасов и диапазоны арматуры</li><li>Требуемая производительность линии</li><li>Подходящие многоэлектродные и точечные машины</li><li>Примеры внедрений и результат заказчика</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/multi-electrode.png" alt="Пример оборудования для сварки каркасов"><strong>Многоэлектродные машины и решения под ТЗ</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать решение для ЖБИ</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-mesh" role="dialog" aria-modal="true" aria-labelledby="task-mesh-title" hidden>
+    <section class="modal modal--detail" id="task-mesh" role="dialog" aria-modal="true" aria-labelledby="task-mesh-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-mesh-title">Сварка сеток</h2><p class="lead">Оборудование для производства арматурных, дорожных и кладочных сеток из проволоки различного диаметра.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Виды и размеры выпускаемых сеток</li><li>Диаметры продольной и поперечной проволоки</li><li>Шаг ячейки и скорость производства</li><li>Комплектация линии подачи и резки</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/multi-electrode.png" alt="Многоэлектродная машина для сварки сеток"><strong>Многоэлектродные машины для сварки сеток</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать машину для сеток</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-wire" role="dialog" aria-modal="true" aria-labelledby="task-wire-title" hidden>
+    <section class="modal modal--detail" id="task-wire" role="dialog" aria-modal="true" aria-labelledby="task-wire-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-wire-title">Сварка проволоки и прутков</h2><p class="lead">Стыковая сварка заготовок нужной длины со стабильным циклом и минимальным выбросом металла.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Диаметры и материалы заготовок</li><li>Требования к качеству стыка</li><li>Режимы сварки и подготовка торцов</li><li>Подбор серийной машины по диапазону</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/butt-welding.png" alt="Стыковая сварочная машина"><strong>Машины контактной стыковой сварки</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать стыковую машину</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-ducts" role="dialog" aria-modal="true" aria-labelledby="task-ducts-title" hidden>
+    <section class="modal modal--detail" id="task-ducts" role="dialog" aria-modal="true" aria-labelledby="task-ducts-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-ducts-title">Сварка воздуховодов</h2><p class="lead">Точечная сварка элементов прямоугольных и круглых воздуховодов для плотных и герметичных соединений.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Форма и габариты воздуховодов</li><li>Толщина оцинкованной и нержавеющей стали</li><li>Требования к герметичности соединения</li><li>Варианты вылета электродов и оснастки</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/spot-welding.jpg" alt="Точечная сварочная машина"><strong>Точечные машины с адаптированной оснасткой</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить сварку воздуховодов</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-tanks" role="dialog" aria-modal="true" aria-labelledby="task-tanks-title" hidden>
+    <section class="modal modal--detail" id="task-tanks" role="dialog" aria-modal="true" aria-labelledby="task-tanks-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-tanks-title">Сварка моек и тонкостенных ёмкостей</h2><p class="lead">Точечная и шовная сварка чаш моек, баков и ёмкостей из стали толщиной от 0,5 мм.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Материал, толщина и геометрия изделия</li><li>Требования к внешнему виду шва</li><li>Регулировка тока и усилия сжатия</li><li>Подходящие точечные и шовные модели</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/seam-welding.jpg" alt="Шовная сварочная машина"><strong>Шовные и точечные машины для тонкого металла</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Подобрать машину для ёмкостей</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-light" role="dialog" aria-modal="true" aria-labelledby="task-light-title" hidden>
+    <section class="modal modal--detail" id="task-light" role="dialog" aria-modal="true" aria-labelledby="task-light-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-light-title">Сварка мембран и лёгких конструкций</h2><p class="lead">Решения для фасадных элементов, экранов, решёток и лёгких металлоконструкций с чистым внешним швом.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Типы изделий и используемые материалы</li><li>Требования к видимой поверхности</li><li>Подбор электродов и сварочного режима</li><li>Примеры оснастки под типовые изделия</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/relief-welding.jpg" alt="Машина рельефной сварки"><strong>Точечные, шовные и рельефные машины</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить конструкцию</button></div>
     </section>
 
-    <section class="modal modal--detail" id="task-auto" role="dialog" aria-modal="true" aria-labelledby="task-auto-title" hidden>
+    <section class="modal modal--detail" id="task-auto" role="dialog" aria-modal="true" aria-labelledby="task-auto-title" data-future-page-notice="При клике откроется отдельная страница сайта с описанием решения производственной задачи. Внизу страницы — подборка подходящих машин." hidden>
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-auto-title">Сварка в машиностроении и автопроме</h2><p class="lead">Оборудование для сборки узлов кузовов, рам и элементов транспортных средств под конкретное соединение и материал.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Конструкция и материал свариваемого узла</li><li>Производственный такт и уровень автоматизации</li><li>Контроль параметров и повторяемость цикла</li><li>Проектирование машины и оснастки под ТЗ</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/spot-welding.jpg" alt="Промышленная точечная машина"><strong>Серийные и специальные машины под ТЗ</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить производственную задачу</button></div>
     </section>
 

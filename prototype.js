@@ -69,7 +69,7 @@
   });
 
   mobileMenu?.addEventListener('click', (event) => {
-    if (!event.target.closest('a')) return;
+    if (!event.target.closest('a, [data-modal-open]')) return;
     mobileMenu.hidden = true;
     menuToggle?.setAttribute('aria-expanded', 'false');
   });
