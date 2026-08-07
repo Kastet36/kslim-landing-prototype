@@ -49,6 +49,13 @@
   });
 
   document.addEventListener('keydown', (event) => {
+    const keyboardOpener = event.target.closest('[data-modal-open][role="button"]');
+    if (keyboardOpener && (event.key === 'Enter' || event.key === ' ')) {
+      event.preventDefault();
+      openModal(getModal(keyboardOpener.dataset.modalOpen));
+      return;
+    }
+
     if (event.key !== 'Escape') return;
     const openModalElement = document.querySelector('.modal.is-open');
     if (openModalElement) closeModal(openModalElement);

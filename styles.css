@@ -1034,7 +1034,7 @@ h4,
   transform: translateY(-3px);
 }
 
-.card__icon {
+.card__index {
   display: grid;
   width: 48px;
   height: 48px;
@@ -1043,11 +1043,6 @@ h4,
   background: var(--color-navy-100);
   color: var(--color-navy-800);
   place-items: center;
-}
-
-.card__icon :where(svg, img) {
-  width: 24px;
-  height: 24px;
 }
 
 .card__title {
@@ -1235,14 +1230,38 @@ h4,
 }
 
 .task-card {
-  min-height: 370px;
+  min-height: 330px;
+  cursor: pointer;
 }
 
-.task-card__number {
-  margin-bottom: var(--space-10);
+.task-card:focus-visible {
+  outline: 3px solid var(--color-accent-500);
+  outline-offset: 3px;
+}
+
+.task-card .text-link {
+  padding-bottom: 2px;
+  background-image: linear-gradient(var(--color-accent-500), var(--color-accent-500));
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
   color: var(--color-navy-700);
-  font-size: 13px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 500;
+  transition:
+    background-size var(--transition-base),
+    color var(--transition-fast);
+}
+
+.task-card:hover .text-link,
+.task-card:focus-visible .text-link {
+  background-size: 100% 2px;
+  color: var(--color-navy-900);
+}
+
+.task-card:hover .text-link::after,
+.task-card:focus-visible .text-link::after {
+  transform: translateX(4px);
 }
 
 .task-card--wide {
@@ -2363,7 +2382,7 @@ textarea.field__control {
 
   .task-card--wide {
     grid-column: auto;
-    min-height: 370px;
+    min-height: 330px;
   }
 
   .catalog-grid {
