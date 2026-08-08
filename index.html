@@ -397,25 +397,47 @@
               <h2>Решённые задачи</h2>
             </div>
             <div class="prototype-note">
-              <strong>Для согласования:</strong> здесь нужны реальные кейсы. Можно не раскрывать название заказчика, если указать отрасль, задачу и измеримый результат.
+              <strong>Для согласования:</strong> все регионы, характеристики и сроки в карточках приведены для примера. Перед публикацией их нужно заменить данными реальных поставок.
             </div>
           </header>
 
-          <article class="case-card">
-            <div class="case-card__media">
-              <img src="assets/images/production-stock.jpg" width="1536" height="1024" alt="Оборудование на производстве КСЛИМ">
-            </div>
-            <div class="case-card__body flow">
-              <span class="case-card__label">Пример оформления кейса</span>
-              <h3>Сварка арматурных каркасов для ЖБИ</h3>
-              <dl class="case-facts">
-                <div><dt>Задача</dt><dd>Указать производственную задачу заказчика, исходные ограничения и требуемую производительность.</dd></div>
-                <div><dt>Решение</dt><dd>Показать, какую серийную машину поставили или какое оборудование разработали под ТЗ.</dd></div>
-                <div><dt>Результат</dt><dd>Добавить сроки, объём выпуска, снижение брака или другой подтверждаемый результат.</dd></div>
-              </dl>
-              <button class="text-link" type="button" data-modal-open="case-example">Читать пример кейса</button>
-            </div>
-          </article>
+          <div class="cases-grid">
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="assets/images/catalog-multi.jpg" width="1085" height="1573" alt="Многоэлектродная машина контактной сварки">
+              </div>
+              <div class="case-card__body">
+                <p class="case-card__meta">Московская область · производство ЖБИ</p>
+                <h3 class="heading-sm">Сварка арматурных каркасов для производства ЖБИ</h3>
+                <p class="case-card__summary">Для завода спроектировали и изготовили многоэлектродную машину под размеры выпускаемых каркасов. Общий срок поставки составил 14 недель.</p>
+                <button class="text-link" type="button" data-modal-open="case-rebar">Читать подробнее</button>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="assets/images/catalog-seam.jpg" width="891" height="1280" alt="Шовная машина контактной сварки">
+              </div>
+              <div class="case-card__body">
+                <p class="case-card__meta">Республика Татарстан · производство ёмкостей</p>
+                <h3 class="heading-sm">Шовная сварка баков из тонколистовой стали</h3>
+                <p class="case-card__summary">Подобрали шовную машину и разработали оснастку под геометрию изделия заказчика. Общий срок поставки составил 12 недель.</p>
+                <button class="text-link" type="button" data-modal-open="case-tanks">Читать подробнее</button>
+              </div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-card__media">
+                <img src="assets/images/catalog-spot.jpg" width="766" height="908" alt="Точечная машина контактной сварки">
+              </div>
+              <div class="case-card__body">
+                <p class="case-card__meta">Свердловская область · машиностроение</p>
+                <h3 class="heading-sm">Контактная сварка деталей для машиностроительного предприятия</h3>
+                <p class="case-card__summary">Изготовили точечную машину с оснасткой под конкретную деталь и рабочую зону предприятия. Общий срок поставки составил 16 недель.</p>
+                <button class="text-link" type="button" data-modal-open="case-engineering">Читать подробнее</button>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -628,8 +650,64 @@
       <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Пример будущей страницы задачи</span><h2 class="heading-md" id="task-auto-title">Сварка в машиностроении и автопроме</h2><p class="lead">Оборудование для сборки узлов кузовов, рам и элементов транспортных средств под конкретное соединение и материал.</p><div class="detail-layout"><div><h3 class="heading-sm">Что будет на странице</h3><ul class="feature-list"><li>Конструкция и материал свариваемого узла</li><li>Производственный такт и уровень автоматизации</li><li>Контроль параметров и повторяемость цикла</li><li>Проектирование машины и оснастки под ТЗ</li></ul></div><div class="detail-equipment"><span>Подходящее оборудование</span><img src="assets/images/spot-welding.jpg" alt="Промышленная точечная машина"><strong>Серийные и специальные машины под ТЗ</strong></div></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить производственную задачу</button></div>
     </section>
 
-    <section class="modal modal--detail" id="case-example" role="dialog" aria-modal="true" aria-labelledby="case-example-title" hidden>
-      <div class="modal__dialog"><button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button><span class="prototype-badge">Демонстрационная структура кейса</span><h2 class="heading-md" id="case-example-title">Сварка арматурных каркасов для ЖБИ</h2><p class="prototype-note"><strong>Важно:</strong> текст ниже показывает формат. Перед публикацией его необходимо заменить подтверждёнными данными реального проекта.</p><div class="case-detail"><section><span>01</span><h3 class="heading-sm">Задача</h3><p>Описать исходное производство, тип каркаса, диаметры арматуры, требуемый темп выпуска и ограничения площадки.</p></section><section><span>02</span><h3 class="heading-sm">Решение</h3><p>Показать выбранную или разработанную машину, её комплектацию, оснастку и выполненные доработки.</p></section><section><span>03</span><h3 class="heading-sm">Результат</h3><p>Привести измеримые показатели: срок запуска, объём выпуска, сокращение ручных операций или брака.</p></section></div><button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить похожую задачу</button></div>
+    <section class="modal modal--detail" id="case-rebar" role="dialog" aria-modal="true" aria-labelledby="case-rebar-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <span class="prototype-badge">Демонстрационный кейс</span>
+        <h2 class="heading-md" id="case-rebar-title">Сварка арматурных каркасов для производства ЖБИ</h2>
+        <p class="prototype-note"><strong>Для согласования:</strong> регион, характеристики и сроки нужно заменить подтверждёнными данными реального проекта.</p>
+        <dl class="case-meta">
+          <div><dt>Заказчик</dt><dd>Производитель железобетонных изделий</dd></div>
+          <div><dt>Регион</dt><dd>Московская область</dd></div>
+          <div><dt>Срок поставки</dt><dd>14 недель</dd></div>
+        </dl>
+        <div class="case-detail">
+          <section><span>01</span><h3 class="heading-sm">Задача</h3><p>Заводу требовалась машина для сварки арматурных каркасов заданного размера. При проектировании нужно было учесть диаметр прутка, расположение сварных точек и размеры рабочей зоны.</p></section>
+          <section><span>02</span><h3 class="heading-sm">Решение</h3><p>КСЛИМ спроектировал многоэлектродную машину под техническое задание заказчика. В комплект вошли сварочная оснастка, шкаф управления и техническая документация. Перед отправкой машину проверили на производстве КСЛИМ.</p></section>
+          <section><span>03</span><h3 class="heading-sm">Результат</h3><p>Заказчик получил готовую машину с оснасткой и документацией. Проектирование заняло 3 недели, производство и заводские испытания — 9 недель, подготовка к отправке и доставка — 2 недели.</p></section>
+        </div>
+        <button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить похожую задачу</button>
+      </div>
+    </section>
+
+    <section class="modal modal--detail" id="case-tanks" role="dialog" aria-modal="true" aria-labelledby="case-tanks-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <span class="prototype-badge">Демонстрационный кейс</span>
+        <h2 class="heading-md" id="case-tanks-title">Шовная сварка баков из тонколистовой стали</h2>
+        <p class="prototype-note"><strong>Для согласования:</strong> регион, характеристики и сроки нужно заменить подтверждёнными данными реального проекта.</p>
+        <dl class="case-meta">
+          <div><dt>Заказчик</dt><dd>Производитель металлических ёмкостей</dd></div>
+          <div><dt>Регион</dt><dd>Республика Татарстан</dd></div>
+          <div><dt>Срок поставки</dt><dd>12 недель</dd></div>
+        </dl>
+        <div class="case-detail">
+          <section><span>01</span><h3 class="heading-sm">Задача</h3><p>Предприятию требовалась машина для выполнения герметичного продольного шва на баках из тонколистовой стали. Нужно было учесть геометрию изделия и требования к внешнему виду соединения.</p></section>
+          <section><span>02</span><h3 class="heading-sm">Решение</h3><p>Подобрали шовную машину контактной сварки и разработали оснастку для установки заготовки. Сварочные режимы проверили на образцах материала заказчика перед отправкой оборудования.</p></section>
+          <section><span>03</span><h3 class="heading-sm">Результат</h3><p>Заказчик получил машину, оснастку и комплект документации. Согласование решения заняло 3 недели, производство и испытания — 7 недель, доставка — 2 недели.</p></section>
+        </div>
+        <button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить похожую задачу</button>
+      </div>
+    </section>
+
+    <section class="modal modal--detail" id="case-engineering" role="dialog" aria-modal="true" aria-labelledby="case-engineering-title" hidden>
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-modal-close aria-label="Закрыть">×</button>
+        <span class="prototype-badge">Демонстрационный кейс</span>
+        <h2 class="heading-md" id="case-engineering-title">Контактная сварка деталей для машиностроительного предприятия</h2>
+        <p class="prototype-note"><strong>Для согласования:</strong> регион, характеристики и сроки нужно заменить подтверждёнными данными реального проекта.</p>
+        <dl class="case-meta">
+          <div><dt>Заказчик</dt><dd>Машиностроительное предприятие</dd></div>
+          <div><dt>Регион</dt><dd>Свердловская область</dd></div>
+          <div><dt>Срок поставки</dt><dd>16 недель</dd></div>
+        </dl>
+        <div class="case-detail">
+          <section><span>01</span><h3 class="heading-sm">Задача</h3><p>Предприятию требовалось сваривать стальные детали сложной формы. Конструкция узла ограничивала доступ к точкам сварки, поэтому серийную машину нужно было адаптировать под чертежи заказчика.</p></section>
+          <section><span>02</span><h3 class="heading-sm">Решение</h3><p>КСЛИМ разработал точечную машину с изменённым вылетом электродов и специальной оснасткой для фиксации детали. Компоновку рабочей зоны согласовали с заказчиком до начала производства.</p></section>
+          <section><span>03</span><h3 class="heading-sm">Результат</h3><p>Предприятие получило машину с оснасткой, шкафом управления и документацией. Проектирование заняло 4 недели, производство и заводские испытания — 10 недель, доставка — 2 недели.</p></section>
+        </div>
+        <button class="button button--primary" type="button" data-modal-switch="task-form">Обсудить похожую задачу</button>
+      </div>
     </section>
 
     <section class="modal modal--detail" id="certificate-preview" role="dialog" aria-modal="true" aria-labelledby="certificate-preview-title" hidden>
