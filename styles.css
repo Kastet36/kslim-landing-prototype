@@ -1607,6 +1607,7 @@ h4,
 }
 
 .case-card__media {
+  position: relative;
   aspect-ratio: 3 / 4;
   padding: var(--space-4);
   background: var(--color-surface);
@@ -1616,6 +1617,20 @@ h4,
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.case-card__photo-note {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-4);
+  padding: 6px 9px;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-xs);
+  background: rgb(255 255 255 / 92%);
+  color: var(--color-muted);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .case-card__body {
