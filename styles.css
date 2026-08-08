@@ -1842,6 +1842,10 @@ textarea.field__control {
   width: min(100%, 920px);
 }
 
+.modal--detail {
+  place-items: start center;
+}
+
 .modal--detail .prototype-badge {
   margin-bottom: var(--space-5);
 }
@@ -1933,26 +1937,27 @@ textarea.field__control {
 }
 
 .case-detail {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-5);
+  max-width: 760px;
   margin-block: var(--space-8);
 }
 
 .case-meta {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 760px;
   margin-top: var(--space-6);
-  border-top: 1px solid var(--color-line);
-  border-bottom: 1px solid var(--color-line);
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
 }
 
 .case-meta > div {
-  padding: var(--space-4);
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3) 0;
 }
 
 .case-meta > div + div {
-  border-left: 1px solid var(--color-line);
+  border-top: 1px solid var(--color-line);
 }
 
 .case-meta dt {
@@ -1970,24 +1975,26 @@ textarea.field__control {
 }
 
 .case-detail section {
-  padding: var(--space-5);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-sm);
+  padding: var(--space-8) 0;
+  border-top: 1px solid var(--color-line);
 }
 
-.case-detail section > span {
-  color: var(--color-navy-700);
-  font-size: 12px;
-  font-weight: 800;
+.case-detail section:last-child {
+  border-bottom: 1px solid var(--color-line);
 }
 
 .case-detail h3 {
-  margin-block: var(--space-4) var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
 .case-detail p {
   color: var(--color-muted);
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.case-detail p + p {
+  margin-top: var(--space-4);
 }
 
 .certificate-sheet {
@@ -2471,19 +2478,12 @@ textarea.field__control {
 
   .request-section__actions,
   .detail-layout,
-  .case-detail,
-  .case-meta,
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
   .cases-grid {
     grid-template-columns: 1fr;
-  }
-
-  .case-meta > div + div {
-    border-top: 1px solid var(--color-line);
-    border-left: 0;
   }
 
   .detail-equipment__grid {
