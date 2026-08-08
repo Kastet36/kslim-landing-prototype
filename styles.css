@@ -2012,6 +2012,50 @@ textarea.field__control {
   margin-top: var(--space-4);
 }
 
+.case-gallery {
+  max-width: 760px;
+  margin-bottom: var(--space-8);
+}
+
+.case-gallery > h3 {
+  margin-bottom: var(--space-2);
+}
+
+.case-gallery > p {
+  margin-bottom: var(--space-5);
+  color: var(--color-muted);
+  font-size: 14px;
+}
+
+.case-gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.case-gallery figure {
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.case-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-white);
+  object-fit: contain;
+}
+
+.case-gallery figcaption {
+  padding: var(--space-3) var(--space-4);
+  color: var(--color-muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .certificate-sheet {
   display: flex;
   min-height: 520px;
@@ -2502,6 +2546,10 @@ textarea.field__control {
   }
 
   .detail-equipment__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-gallery__grid {
     grid-template-columns: 1fr;
   }
 
